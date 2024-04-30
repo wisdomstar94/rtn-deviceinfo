@@ -9,7 +9,9 @@ class DeviceinfoModule(reactContext: ReactApplicationContext) : NativeRtnDevicei
   override fun getName() = NAME
 
   override fun getDeviceModel(promise: Promise) {
-    promise.resolve(Build.MODEL)
+    val manufacturer: String = Build.MANUFACTURER
+    val model: String = Build.MODEL
+    promise.resolve(manufacturer + model)
   }
 
   companion object {
