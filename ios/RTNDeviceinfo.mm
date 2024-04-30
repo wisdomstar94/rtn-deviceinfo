@@ -6,7 +6,7 @@
 RCT_EXPORT_MODULE()
 
 #ifdef RCT_NEW_ARCH_ENABLED
--(NSString*)getDeviceModel:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject {
+-(void)getDeviceModel:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject {
     struct utsname systemInfo;
     uname(&systemInfo);
     // return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
