@@ -1,0 +1,39 @@
+{
+  "name": "rtn-deviceinfo",
+  "version": "0.0.1",
+  "description": "android & ios 기기에 대한 정보를 제공하는 React Native Turbo Module 입니다.",
+  "react-native": "js/index",
+  "source": "js/index",
+  "files": [
+    "js",
+    "android",
+    "ios",
+    "rtn-deviceinfo.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "keywords": ["react-native", "ios", "android", "device", "info"],
+  "repository": "https://github.com/wisdomstar94/rtn-deviceinfo",
+  "author": "wisdomstar94@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wisdomstar94/rtn-deviceinfo/issues"
+  },
+  "homepage": "https://github.com/wisdomstar94/rtn-deviceinfo#readme",
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "RTNDeviceinfoSpec",
+    "type": "modules",
+    "jsSrcsDir": "js",
+    "android": {
+      "javaPackageName": "com.rtndeviceinfo"
+    }
+  }
+}
