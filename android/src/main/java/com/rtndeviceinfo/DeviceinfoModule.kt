@@ -1,8 +1,8 @@
-package com.rtncdeviceinfo
+package com.rtndeviceinfo
 
 import com.facebook.react.bridge.Promise
 import com.facebook.react.bridge.ReactApplicationContext
-import com.rtncdeviceinfo.NativeRtnDeviceinfoSpec
+import com.rtndeviceinfo.NativeRtnDeviceinfoSpec
 import android.os.Build;
 
 class DeviceinfoModule(reactContext: ReactApplicationContext) : NativeRtnDeviceinfoSpec(reactContext) {
