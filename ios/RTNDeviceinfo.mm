@@ -9,8 +9,8 @@ RCT_EXPORT_MODULE()
 -(void)getDeviceModel:(RCTPromiseResolveBlock)resolve reject:(RCTPromiseRejectBlock)reject {
     struct utsname systemInfo;
     uname(&systemInfo);
-    // return [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    resolve([NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding]);
+    NSString* code = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    resolve(code);
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
